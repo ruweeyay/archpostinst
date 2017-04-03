@@ -13,7 +13,7 @@ echo "This script will install pacli"
 echo "Ready [y n]? "
 read readyan
 if [ $readyan = y ] ; then
-	mkdir ~/git
+	mkdir -p ~/git
 	pacman -S base-devel git wget
 	wget -i pacli_wget
 	tar -xvf downgrade.tar.gz -C /home/$WHOMI/git/
